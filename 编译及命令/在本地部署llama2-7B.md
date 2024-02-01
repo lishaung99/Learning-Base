@@ -18,7 +18,7 @@ llama.cpp使用c++语言写的，因此安装编译器MinGW（Windows版g++编�
 
 下载安装，环境变量可以安装软件步骤中选择自动加入（如下图），也可以自己手动加入到系统变量中
 
-<img src="C:\Users\carbi\AppData\Roaming\Typora\typora-user-images\image-20230817095555363.png" alt="image-20230817095555363" style="zoom:67%;" />
+<img src="image\image-20230817095555363.png" alt="image-20230817095555363" style="zoom:67%;" />
 
 安装完成之后如下图
 
