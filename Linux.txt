@@ -1,0 +1,82 @@
+查看进程
+ps aux
+关闭进程
+kill -9 id号
+
+查看硬盘大小
+df -h
+
+查看当前文件夹下的硬盘使用状况
+du -sh 
+
+查看文件占用
+lsof | grep deleted
+
+查看Gpu
+nvidia-smi
+
+查看TPU
+bm-smi
+
+实时动态查看内存
+watch -p free -g
+
+拷贝
+cp -rvf 文件  文件夹
+-r：递归处理
+-v:显示详细过程
+-f：避免冲突，强制执行
+
+两个服务器互相拷贝文件
+scp /home/work/source.txt work@192.168.0.10:/home/work/
+
+查看Linux内核版本
+cat /proc/version
+
+压缩命令
+7z a tpu-mlir.zip tpu-mlir/
+tar -czvf tmp.tar.gz tmp
+tar -zcvf test.tar.gz test/
+
+查看网络
+ifconfig
+
+查看网络接口
+iwconfig
+
+查看usb
+ls /sys/bus/usb/devices
+
+查看硬盘
+lsblk -d -o name,rota
+0：ssd
+1： 其他
+
+查看环境设置
+export | grep LD
+ 删除环境设置
+export -n 路径名字 
+
+
+ldd 文件名
+查看挂载
+
+服务器关机与重启
+shutdown
+shutdown -r now
+reboot
+
+查看所有内核
+dpkg --get-selections |grep linux-image
+内核禁止自动更新
+sudo apt-mark hold linux-image-generic linux-headers-generic
+
+---------------------------------------------------------------------------------
+user@ubuntu:/$ sudo apt-mark hold linux-image-generic linux-headers-generic     |
+linux-image-generic set on hold.                                                |
+linux-headers-generic set on hold.                                              |
+---------------------------------------------------------------------------------
+取消关闭
+sudo apt-mark unhold linux-image-generic linux-headers-generic
+
+
