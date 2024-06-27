@@ -1,0 +1,55 @@
+2024-06-27 15:41:16,091 - INFO - Transformer(
+  (Encoder): Encoder(
+    (src_emb): Embedding(9, 512)
+    (pos_emb): PositionalEncoding(
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (layers): ModuleList(
+      (0-5): 6 x EncoderLayer(
+        (enc_self_attn): MultiHeadAttention(
+          (W_Q): Linear(in_features=512, out_features=512, bias=False)
+          (W_K): Linear(in_features=512, out_features=512, bias=False)
+          (W_V): Linear(in_features=512, out_features=512, bias=False)
+          (fc): Linear(in_features=512, out_features=512, bias=False)
+        )
+        (pos_ffn): PoswiseFeedForwardNet(
+          (fc): Sequential(
+            (0): Linear(in_features=512, out_features=2048, bias=False)
+            (1): ReLU()
+            (2): Linear(in_features=2048, out_features=512, bias=False)
+          )
+        )
+      )
+    )
+  )
+  (Decoder): Decoder(
+    (tgt_emb): Embedding(10, 512)
+    (pos_emb): PositionalEncoding(
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (layers): ModuleList(
+      (0-5): 6 x DecoderLayer(
+        (dec_self_attn): MultiHeadAttention(
+          (W_Q): Linear(in_features=512, out_features=512, bias=False)
+          (W_K): Linear(in_features=512, out_features=512, bias=False)
+          (W_V): Linear(in_features=512, out_features=512, bias=False)
+          (fc): Linear(in_features=512, out_features=512, bias=False)
+        )
+        (dec_enc_attn): MultiHeadAttention(
+          (W_Q): Linear(in_features=512, out_features=512, bias=False)
+          (W_K): Linear(in_features=512, out_features=512, bias=False)
+          (W_V): Linear(in_features=512, out_features=512, bias=False)
+          (fc): Linear(in_features=512, out_features=512, bias=False)
+        )
+        (pos_ffn): PoswiseFeedForwardNet(
+          (fc): Sequential(
+            (0): Linear(in_features=512, out_features=2048, bias=False)
+            (1): ReLU()
+            (2): Linear(in_features=2048, out_features=512, bias=False)
+          )
+        )
+      )
+    )
+  )
+  (projection): Linear(in_features=512, out_features=10, bias=False)
+)

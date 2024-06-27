@@ -1,12 +1,7 @@
-<!--
- * @Description: 
- * @Author: lishuang
- * @Date: 2024-01-15 14:06:05
- * @FilePath: \transformer\README.md
- * @LastEditTime: 2024-06-27 14:31:30
- * @LastEditors: lishuang
--->
-# transformer
+# Transformer基本实现
+
+基础的transformers架构，6层模型，pytorch，训练、保存、转onnx、测试
+
 │  datasets.py          数据集
 │  main.py              主程序
 │  model.onnx           onnx脚本
