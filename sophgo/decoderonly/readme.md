@@ -149,4 +149,4 @@
 
 7. 执行 bmprofile_out 文件下的 result.html 即可
 
-![Snipaste_2024-07-01_17-55-30](sophgo/decoderonly/image/Snipaste_2024-07-01_17-55-30.png)
+![sophgo/decoderonly/image/Snipaste_2024-07-01_17-55-30.png](sophgo/decoderonly/image/Snipaste_2024-07-01_17-55-30.png)
