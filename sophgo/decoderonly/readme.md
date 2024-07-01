@@ -148,5 +148,6 @@
    ```
 
 7. 执行 bmprofile_out 文件下的 result.html 即可
+https://github.com/lishaung99/Learning-Base/blob/master/sophgo/decoderonly/image/Snipaste_2024-07-01_17-55-30.png
 
 ![sophgo/decoderonly/image/Snipaste_2024-07-01_17-55-30.png](sophgo/decoderonly/image/Snipaste_2024-07-01_17-55-30.png)
